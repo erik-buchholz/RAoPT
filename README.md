@@ -17,6 +17,7 @@ Artifacts for [ACSAC'22](https://www.acsac.org/2022/) paper 'Reconstruction Atta
    * [Pre-Processing](#pre-processing)
    * [Protection Mechanisms](#protection-mechanisms)
    * [Evaluation](#evaluation)
+   * [Plots](#plots)
    * [Manual Execution](#manual-execution)
       * [Step 1: Creating Train and Test Sets](#step-1-creating-train-and-test-sets)
       * [Step 2: Training](#step-2-training)
@@ -252,6 +253,19 @@ Note: To run a case, the required files in the CSV directory need to exist.
 I.e., a case using the T-Drive dataset requires the file `processed_csv/tdrive/originals.csv` to exists. 
 If particularly the protection mechanism SDDe=1 (and default M=16500) 
 is considered, the file `processed_csv/tdrive/sdd_M16500_e1.0_1.csv` needs to exist, too.
+
+### Plots
+
+To reproduce the plots and tables from the paper, the following command can be used:
+
+    python3 -m raopt.plot.paper
+
+**Note:** It might be necessary to update the paths at the top of the file:
+
+    result_file = Config.get_output_dir() + "case{}/results.csv"  # Needs format with case ID
+    plot_dir = "plots/"
+
+Tables will be printed to the command line while the plots will be stored into the defined directory.
 
 ### Manual Execution
 
