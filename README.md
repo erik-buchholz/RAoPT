@@ -59,13 +59,34 @@ The code has been evaluated on Ubuntu 20.04.4 LTS (GNU/Linux 5.13.0-48-generic x
 
 If you use any portion of our work, please cite our publication.
 
-To be added, accepted at [ACSAC'22](https://www.acsac.org/2022/).
+> Erik Buchholz, Alsharif Abuadbba, Shuo Wang, Surya Nepal, and Salil S.
+> Kanhere. 2022. Reconstruction Attack on Differential Private Trajectory
+> Protection Mechanisms. In Annual Computer Security Applications Conference (ACSAC ’22), December 5–9, 2022, Austin, TX, USA. ACM, New York,
+> NY, USA, 14 pages. https://doi.org/10.1145/3564625.3564628
+
+BibTeX:
+
+	@inproceedings{BSW+22,
+		author = {Buchholz, Erik and Abuadbba, Alsharif and Wang, Shuo and Nepal, Surya and Kanhere, Salil S.},
+		title = {{Reconstruction Attack on Differential Private Trajectory Protection Mechanisms}},
+		booktitle = {Proceedings of the 38th Annual Computer Security Applications Conference (ACSAC '22)},
+		doi = {10.1145/3564625.3564628},
+		month = {12},
+		year = {2022},
+		publisher = {Association for Computing Machinery},
+		address = {New York, NY, USA},
+		location = {Austin, USA},
+		numpages = {14},
+		code = {https://github.com/erik-buchholz/RAoPT},
+	}
 
 ## Artifacts Evaluation
 
 This artifact was submitted to the
 [ACSAC 2022 Artifacts Evaluation](https://www.acsac.org/2022/submissions/papers/artifacts/)
-and was evaluated as ... .
+and was evaluated as [Functional](https://www.acm.org/publications/policies/artifact-review-badging):
+
+> The artifacts associated with the research are found to be documented, consistent, complete, exercisable, and include appropriate evidence of verification and validation.
 
 ## Licence
 
@@ -372,10 +393,12 @@ dataset name.
 **Author:** Erik Buchholz ([e.buchholz@unsw.edu.au](mailto:e.buchholz@unsw.edu.au))
 
 **Supervision:**
+
 - Prof. Salil Kanhere
 - Dr. Surya Nepal
 
 **Involved Researchers:**
+
 - Dr. Sharif Abuadbba
 - Dr. Shuo Wang
 
