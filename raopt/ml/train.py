@@ -12,8 +12,8 @@ import pickle
 
 from timeit import default_timer as timer
 
-from raopt.ml import encoder
 from raopt.ml.model import AttackModel
+from raopt.ml import encoder
 from raopt.utils import logger, helpers
 from raopt.utils.config import Config
 
