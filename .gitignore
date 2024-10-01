@@ -7,7 +7,7 @@
 # If you put any files inside the two folders below, it will NOT be committed
 data/
 deprecated/
-output/
+# output/  # Included as submodule
 processed/
 processed_cache/
 processed_csv/

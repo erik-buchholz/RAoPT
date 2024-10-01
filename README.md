@@ -4,28 +4,30 @@ Artifacts for [ACSAC'22](https://www.acsac.org/2022/) paper 'Reconstruction Atta
 
 ## Table of Contents
 
-* [Abstract](#abstract)
-* [Citations](#citations)
-* [Licence](#licence)
-* [Acknowledgements](#acknowledgements)
-* [Requirements](#requirements)
-* [Setup](#setup)
-* [Tests](#tests)
-* [Configuration](#configuration)
-* [Execution](#execution)
-   * [Download datasets into data/ directory](#download-datasets-into-data-directory)
-   * [Pre-Processing](#pre-processing)
-   * [Protection Mechanisms](#protection-mechanisms)
-   * [Evaluation](#evaluation)
-   * [Plots](#plots)
-   * [Manual Execution](#manual-execution)
-      * [Step 1: Creating Train and Test Sets](#step-1-creating-train-and-test-sets)
-      * [Step 2: Training](#step-2-training)
-      * [Step 3: Prediction/Evaluation](#step-3-predictionevaluation)
-   * [Measure Reconstruction Runtime](#measure-reconstruction-runtime)
-   * [Adding a Datasets](#adding-a-dataset)
-* [Contact](#contact)
-* [References](#references)
+- [Table of Contents](#table-of-contents)
+- [Abstract](#abstract)
+- [Citations](#citations)
+- [Artifacts Evaluation](#artifacts-evaluation)
+- [Licence](#licence)
+- [Acknowledgements](#acknowledgements)
+- [Requirements](#requirements)
+- [Setup](#setup)
+- [Tests](#tests)
+- [Configuration](#configuration)
+- [Execution](#execution)
+  - [Download datasets into `data/` directory](#download-datasets-into-data-directory)
+  - [Pre-Processing](#pre-processing)
+  - [Protection Mechanisms](#protection-mechanisms)
+  - [Evaluation](#evaluation)
+  - [Plots](#plots)
+  - [Manual Execution](#manual-execution)
+    - [Step 1: Creating Train and Test Sets](#step-1-creating-train-and-test-sets)
+    - [Step 2: Training](#step-2-training)
+    - [Step 3: Prediction/Evaluation](#step-3-predictionevaluation)
+  - [Measure Reconstruction Runtime](#measure-reconstruction-runtime)
+  - [Adding a Dataset](#adding-a-dataset)
+- [Contact](#contact)
+- [References](#references)
 
 ## Abstract
 
@@ -170,14 +172,12 @@ Evaluation cases are defined in `config/cases.csv`.
 
 Before the model can be evaluated, the dataset needs to be pre-processed.
 Due to the large size, we could not include the pre-processed datasets into this repository.
+If you would simply like to reproduce the plots by using our evaluation results or use the parameters of the trained models, clone our result repository into `output/`.
+We have included this repository as a submodule so that you can clone the submodule.
 
-**Note for ACSAC'22 AE reviewers:**
-To allow you to test the RAoPT model without performing the computationally expensive pre-processing,
-we uploaded the pre-processed datasets as CSV files to the location stated under `Additional URL`
-in our submission.
-In case you decide to use these datasets, please copy them into the directory `processed_csv/`
-(or as configured in `config/config.ini` for `CSV_DIR`).
-Then, you can skip directly to step [Evaluation](#evaluation).
+```shell
+git submodule update --init
+```
 
 ### Download datasets into `data/` directory
 
