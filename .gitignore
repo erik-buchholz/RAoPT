@@ -13,6 +13,8 @@ processed_cache/
 processed_csv/
 log/
 model_parameters/
+plots/
+# Can easily be regenerated via python3 -m raopt.plot.paper
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

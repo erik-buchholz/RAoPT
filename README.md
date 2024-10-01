@@ -277,6 +277,7 @@ is considered, the file `processed_csv/tdrive/sdd_M16500_e1.0_1.csv` needs to ex
 
 ### Plots
 
+If you want to use the results form the paper, make sure to clone the results submodule via `cd output && git submodule update --init`.
 To reproduce the plots and tables from the paper, the following command can be used:
 
     python3 -m raopt.plot.paper
