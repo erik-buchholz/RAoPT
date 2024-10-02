@@ -172,7 +172,8 @@ Evaluation cases are defined in `config/cases.csv`.
 
 Before the model can be evaluated, the dataset needs to be pre-processed.
 Due to the large size, we could not include the pre-processed datasets into this repository.
-If you would simply like to reproduce the plots by using our evaluation results or use the parameters of the trained models, clone our result repository into `output/`.
+
+**Plots only:** If you would simply like to reproduce the plots by using our evaluation results or use the parameters of the trained models, clone our result repository into `output/`.
 We have included this repository as a submodule so that you can clone the submodule.
 
 ```shell
@@ -277,7 +278,7 @@ is considered, the file `processed_csv/tdrive/sdd_M16500_e1.0_1.csv` needs to ex
 
 ### Plots
 
-If you want to use the results form the paper, make sure to clone the results submodule via `cd output && git submodule update --init`.
+If you want to use the results form the paper, make sure to clone the results submodule via `git submodule update --init`.
 To reproduce the plots and tables from the paper, the following command can be used:
 
     python3 -m raopt.plot.paper
