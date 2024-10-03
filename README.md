@@ -172,6 +172,9 @@ Evaluation cases are defined in `config/cases.csv`.
 
 Before the model can be evaluated, the dataset needs to be pre-processed.
 Due to the large size, we could not include the pre-processed datasets into this repository.
+We made the pre-processed datasets that we used the evaluations in the paper available in a separate repository: [https://github.com/erik-buchholz/RAoPT_data](https://github.com/erik-buchholz/RAoPT_data).
+If would like to use these, clone the repository, reassemble the compressed dataset and copy the files into the `processed_csv/` directory on the root level of this repository.
+Then, you can skip directly to [Evaluation](#evaluation).
 
 **Plots only:** If you would simply like to reproduce the plots by using our evaluation results or use the parameters of the trained models, clone our result repository into `output/`.
 We have included this repository as a submodule so that you can clone the submodule.
